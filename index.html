@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Typing Speed Test</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="mendoza.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Typing Speed</h1>
+
+        <div class="stats">
+            <div class="stat">Time: <span id="timer">30s</span></div>
+            <div class="stat">Mistakes: <span id="mistakes">0</span></div>
+            <div class="stat">WPM: <span id="wpm">0</span></div>
+        </div>
+
+        <div id="quote">Click "Start Test" to begin typing practice</div>
+
+        <textarea id="input" placeholder="Type the sentence above..." disabled></textarea>
+        <br>
+
+        <button id="start">Start Test</button>
+
+        <div class="result" id="result" style="display:none;">
+            <div class="wpm">Final WPM: <span id="finalWPM">0</span></div>
+            <div class="accuracy">Accuracy: <span id="finalAccuracy">0</span>%</div>
+            <button onclick="start test()">New Test</button>
+        </div>
+    </div>
+
+    <!-- Link JavaScript -->
+    <script src="script.js"></script>
+</body>
